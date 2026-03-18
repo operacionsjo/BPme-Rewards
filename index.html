@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Un momento...</title>
-</head>
-<body>
 <script>
-navigator.sendBeacon("https://script.google.com/macros/s/AKfycbzHPU9PiwgHlnFVojH9CPaIvADrrDLR4WLJp4-hHXlU7ezvj92wBfhYM79kChjrVpXsIw/exec?qr=evento1");
+fetch("https://script.google.com/macros/s/AKfycbxB8OWlK5tV9O1FxM-gvfSQ93u6jkw9KpC4fHjTqvIcXNP0aRWi9I7LWULbom5CftB-pw/exec?qr=evento1")
+  .catch(() => {});
 
 setTimeout(() => {
   window.location.href = "https://www.bpmerewards.com.mx/";
-}, 500);
+}, 1200);
 </script>
-</body>
-</html>
