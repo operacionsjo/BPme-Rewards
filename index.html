@@ -1,6 +1,10 @@
 <script>
-fetch("https://script.google.com/macros/s/AKfycbxB8OWlK5tV9O1FxM-gvfSQ93u6jkw9KpC4fHjTqvIcXNP0aRWi9I7LWULbom5CftB-pw/exec?qr=CHRISTIAN")
-  .catch(() => {});
+const params = new URLSearchParams(window.location.search);
+const qr = params.get("qr");
+
+fetch(`https://script.google.com/macros/s/AKfycbxB8OWlK5tV9O1FxM-gvfSQ93u6jkw9KpC4fHjTqvIcXNP0aRWi9I7LWULbom5CftB-pw/exec?qr=${qr}`, {
+  mode: "no-cors"
+}).catch(() => {});
 
 setTimeout(() => {
   window.location.href = "https://www.bpmerewards.com.mx/";
